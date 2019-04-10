@@ -8,11 +8,23 @@
   <artifactId>flang</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+  <properties>
+    <antlr4.version>4.7.1</antlr4.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.antlr</groupId>
       <artifactId>antlr4-runtime</artifactId>
-      <version>4.2</version>
+      <version>${antlr4.version}</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4-maven-plugin</artifactId>
+      <version>${antlr4.version}</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -24,11 +36,27 @@
 
 
   <build>
+
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+
       <plugin>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
-        <version>4.2</version>
+        <version>${antlr4.version}</version>
+        <configuration>
+          <arguments>
+            <argument>-visitor</argument>
+          </arguments>
+        </configuration>
         <executions>
           <execution>
             <goals>
@@ -38,14 +66,44 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
         <configuration>
-          <source>8</source>
-          <target>8</target>
+          <mainClass>tl.antlr4.Main</mainClass>
         </configuration>
       </plugin>
+
     </plugins>
+    <!--<plugins>-->
+      <!--<plugin>-->
+        <!--<groupId>org.antlr</groupId>-->
+        <!--<artifactId>antlr4-maven-plugin</artifactId>-->
+        <!--<version>4.2</version>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<goals>-->
+              <!--<goal>antlr4</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
+        <!--</executions>-->
+      <!--</plugin>-->
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-compiler-plugin</artifactId>-->
+        <!--<configuration>-->
+          <!--<source>8</source>-->
+          <!--<target>8</target>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
+    <!--</plugins>-->
   </build>
 
 

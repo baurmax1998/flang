@@ -1,4 +1,4 @@
-// Generated from de/cherry/game/Field.g4 by ANTLR 4.2
+// Generated from de/cherry/game/Field.g4 by ANTLR 4.7.1
 package de.cherry.game;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -11,26 +11,60 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class FieldParser extends Parser {
+	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
+
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__5=1, T__4=2, T__3=3, T__2=4, T__1=5, T__0=6, Name=7, Int=8, WS=9, NL=10;
-	public static final String[] tokenNames = {
-		"<INVALID>", "'at'", "'buried'", "'is'", "'scores'", "','", "'points'", 
-		"Name", "Int", "WS", "NL"
-	};
+		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, Name=7, Int=8, WS=9, NL=10;
 	public static final int
 		RULE_field = 0, RULE_points = 1, RULE_burial = 2, RULE_location = 3;
 	public static final String[] ruleNames = {
 		"field", "points", "burial", "location"
 	};
 
-	@Override
-	public String getGrammarFileName() { return "Field.g4"; }
+	private static final String[] _LITERAL_NAMES = {
+		null, "'scores'", "'points'", "'is'", "'buried'", "'at'", "','"
+	};
+	private static final String[] _SYMBOLIC_NAMES = {
+		null, null, null, null, null, null, null, "Name", "Int", "WS", "NL"
+	};
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+
+	/**
+	 * @deprecated Use {@link #VOCABULARY} instead.
+	 */
+	@Deprecated
+	public static final String[] tokenNames;
+	static {
+		tokenNames = new String[_SYMBOLIC_NAMES.length];
+		for (int i = 0; i < tokenNames.length; i++) {
+			tokenNames[i] = VOCABULARY.getLiteralName(i);
+			if (tokenNames[i] == null) {
+				tokenNames[i] = VOCABULARY.getSymbolicName(i);
+			}
+
+			if (tokenNames[i] == null) {
+				tokenNames[i] = "<INVALID>";
+			}
+		}
+	}
 
 	@Override
-	public String[] getTokenNames() { return tokenNames; }
+	@Deprecated
+	public String[] getTokenNames() {
+		return tokenNames;
+	}
+
+	@Override
+
+	public Vocabulary getVocabulary() {
+		return VOCABULARY;
+	}
+
+	@Override
+	public String getGrammarFileName() { return "Field.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -48,19 +82,19 @@ public class FieldParser extends Parser {
 	public static class FieldContext extends ParserRuleContext {
 		public Token name;
 		public List<TerminalNode> NL() { return getTokens(FieldParser.NL); }
-		public TerminalNode EOF() { return getToken(FieldParser.EOF, 0); }
-		public List<PointsContext> points() {
-			return getRuleContexts(PointsContext.class);
-		}
-		public List<BurialContext> burial() {
-			return getRuleContexts(BurialContext.class);
-		}
 		public TerminalNode NL(int i) {
 			return getToken(FieldParser.NL, i);
 		}
+		public TerminalNode EOF() { return getToken(FieldParser.EOF, 0); }
 		public TerminalNode Name() { return getToken(FieldParser.Name, 0); }
+		public List<PointsContext> points() {
+			return getRuleContexts(PointsContext.class);
+		}
 		public PointsContext points(int i) {
 			return getRuleContext(PointsContext.class,i);
+		}
+		public List<BurialContext> burial() {
+			return getRuleContexts(BurialContext.class);
 		}
 		public BurialContext burial(int i) {
 			return getRuleContext(BurialContext.class,i);
@@ -77,6 +111,11 @@ public class FieldParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof FieldListener ) ((FieldListener)listener).exitField(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FieldVisitor ) return ((FieldVisitor<? extends T>)visitor).visitField(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final FieldContext field() throws RecognitionException {
@@ -87,18 +126,22 @@ public class FieldParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(8); ((FieldContext)_localctx).name = match(Name);
-			setState(9); match(NL);
+			setState(8);
+			((FieldContext)_localctx).name = match(Name);
+			setState(9);
+			match(NL);
 			setState(13); 
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,0,_ctx);
+			_alt = 1;
 			do {
 				switch (_alt) {
 				case 1:
 					{
 					{
-					setState(10); points();
-					setState(11); match(NL);
+					setState(10);
+					points();
+					setState(11);
+					match(NL);
 					}
 					}
 					break;
@@ -108,22 +151,25 @@ public class FieldParser extends Parser {
 				setState(15); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,0,_ctx);
-			} while ( _alt!=2 && _alt!=-1 );
+			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			setState(20); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(17); burial();
-				setState(18); match(NL);
+				setState(17);
+				burial();
+				setState(18);
+				match(NL);
 				}
 				}
 				setState(22); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==Name );
-			setState(24); match(EOF);
+			setState(24);
+			match(EOF);
 			}
 		}
 		catch (RecognitionException re) {
@@ -140,10 +186,10 @@ public class FieldParser extends Parser {
 	public static class PointsContext extends ParserRuleContext {
 		public Token treasure;
 		public Token value;
+		public List<TerminalNode> WS() { return getTokens(FieldParser.WS); }
 		public TerminalNode WS(int i) {
 			return getToken(FieldParser.WS, i);
 		}
-		public List<TerminalNode> WS() { return getTokens(FieldParser.WS); }
 		public TerminalNode Name() { return getToken(FieldParser.Name, 0); }
 		public TerminalNode Int() { return getToken(FieldParser.Int, 0); }
 		public PointsContext(ParserRuleContext parent, int invokingState) {
@@ -158,6 +204,11 @@ public class FieldParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof FieldListener ) ((FieldListener)listener).exitPoints(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FieldVisitor ) return ((FieldVisitor<? extends T>)visitor).visitPoints(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final PointsContext points() throws RecognitionException {
@@ -166,13 +217,20 @@ public class FieldParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(26); ((PointsContext)_localctx).treasure = match(Name);
-			setState(27); match(WS);
-			setState(28); match(4);
-			setState(29); match(WS);
-			setState(30); ((PointsContext)_localctx).value = match(Int);
-			setState(31); match(WS);
-			setState(32); match(6);
+			setState(26);
+			((PointsContext)_localctx).treasure = match(Name);
+			setState(27);
+			match(WS);
+			setState(28);
+			match(T__0);
+			setState(29);
+			match(WS);
+			setState(30);
+			((PointsContext)_localctx).value = match(Int);
+			setState(31);
+			match(WS);
+			setState(32);
+			match(T__1);
 			}
 		}
 		catch (RecognitionException re) {
@@ -189,14 +247,14 @@ public class FieldParser extends Parser {
 	public static class BurialContext extends ParserRuleContext {
 		public Token treasure;
 		public LocationContext at;
+		public List<TerminalNode> WS() { return getTokens(FieldParser.WS); }
 		public TerminalNode WS(int i) {
 			return getToken(FieldParser.WS, i);
 		}
+		public TerminalNode Name() { return getToken(FieldParser.Name, 0); }
 		public LocationContext location() {
 			return getRuleContext(LocationContext.class,0);
 		}
-		public List<TerminalNode> WS() { return getTokens(FieldParser.WS); }
-		public TerminalNode Name() { return getToken(FieldParser.Name, 0); }
 		public BurialContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -209,6 +267,11 @@ public class FieldParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof FieldListener ) ((FieldListener)listener).exitBurial(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FieldVisitor ) return ((FieldVisitor<? extends T>)visitor).visitBurial(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final BurialContext burial() throws RecognitionException {
@@ -217,15 +280,24 @@ public class FieldParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(34); ((BurialContext)_localctx).treasure = match(Name);
-			setState(35); match(WS);
-			setState(36); match(3);
-			setState(37); match(WS);
-			setState(38); match(2);
-			setState(39); match(WS);
-			setState(40); match(1);
-			setState(41); match(WS);
-			setState(42); ((BurialContext)_localctx).at = location();
+			setState(34);
+			((BurialContext)_localctx).treasure = match(Name);
+			setState(35);
+			match(WS);
+			setState(36);
+			match(T__2);
+			setState(37);
+			match(WS);
+			setState(38);
+			match(T__3);
+			setState(39);
+			match(WS);
+			setState(40);
+			match(T__4);
+			setState(41);
+			match(WS);
+			setState(42);
+			((BurialContext)_localctx).at = location();
 			}
 		}
 		catch (RecognitionException re) {
@@ -242,10 +314,10 @@ public class FieldParser extends Parser {
 	public static class LocationContext extends ParserRuleContext {
 		public Token x;
 		public Token y;
+		public List<TerminalNode> Int() { return getTokens(FieldParser.Int); }
 		public TerminalNode Int(int i) {
 			return getToken(FieldParser.Int, i);
 		}
-		public List<TerminalNode> Int() { return getTokens(FieldParser.Int); }
 		public LocationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -258,6 +330,11 @@ public class FieldParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof FieldListener ) ((FieldListener)listener).exitLocation(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FieldVisitor ) return ((FieldVisitor<? extends T>)visitor).visitLocation(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final LocationContext location() throws RecognitionException {
@@ -266,9 +343,12 @@ public class FieldParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(44); ((LocationContext)_localctx).x = match(Int);
-			setState(45); match(5);
-			setState(46); ((LocationContext)_localctx).y = match(Int);
+			setState(44);
+			((LocationContext)_localctx).x = match(Int);
+			setState(45);
+			match(T__5);
+			setState(46);
+			((LocationContext)_localctx).y = match(Int);
 			}
 		}
 		catch (RecognitionException re) {
@@ -283,19 +363,19 @@ public class FieldParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\f\63\4\2\t\2\4\3"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\f\63\4\2\t\2\4\3"+
 		"\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\2\3\2\6\2\20\n\2\r\2\16\2\21\3\2\3"+
 		"\2\3\2\6\2\27\n\2\r\2\16\2\30\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3"+
 		"\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\2\2\6\2\4"+
-		"\6\b\2\2\60\2\n\3\2\2\2\4\34\3\2\2\2\6$\3\2\2\2\b.\3\2\2\2\n\13\7\t\2"+
-		"\2\13\17\7\f\2\2\f\r\5\4\3\2\r\16\7\f\2\2\16\20\3\2\2\2\17\f\3\2\2\2\20"+
-		"\21\3\2\2\2\21\17\3\2\2\2\21\22\3\2\2\2\22\26\3\2\2\2\23\24\5\6\4\2\24"+
-		"\25\7\f\2\2\25\27\3\2\2\2\26\23\3\2\2\2\27\30\3\2\2\2\30\26\3\2\2\2\30"+
-		"\31\3\2\2\2\31\32\3\2\2\2\32\33\7\2\2\3\33\3\3\2\2\2\34\35\7\t\2\2\35"+
-		"\36\7\13\2\2\36\37\7\6\2\2\37 \7\13\2\2 !\7\n\2\2!\"\7\13\2\2\"#\7\b\2"+
-		"\2#\5\3\2\2\2$%\7\t\2\2%&\7\13\2\2&\'\7\5\2\2\'(\7\13\2\2()\7\4\2\2)*"+
-		"\7\13\2\2*+\7\3\2\2+,\7\13\2\2,-\5\b\5\2-\7\3\2\2\2./\7\n\2\2/\60\7\7"+
-		"\2\2\60\61\7\n\2\2\61\t\3\2\2\2\4\21\30";
+		"\6\b\2\2\2\60\2\n\3\2\2\2\4\34\3\2\2\2\6$\3\2\2\2\b.\3\2\2\2\n\13\7\t"+
+		"\2\2\13\17\7\f\2\2\f\r\5\4\3\2\r\16\7\f\2\2\16\20\3\2\2\2\17\f\3\2\2\2"+
+		"\20\21\3\2\2\2\21\17\3\2\2\2\21\22\3\2\2\2\22\26\3\2\2\2\23\24\5\6\4\2"+
+		"\24\25\7\f\2\2\25\27\3\2\2\2\26\23\3\2\2\2\27\30\3\2\2\2\30\26\3\2\2\2"+
+		"\30\31\3\2\2\2\31\32\3\2\2\2\32\33\7\2\2\3\33\3\3\2\2\2\34\35\7\t\2\2"+
+		"\35\36\7\13\2\2\36\37\7\3\2\2\37 \7\13\2\2 !\7\n\2\2!\"\7\13\2\2\"#\7"+
+		"\4\2\2#\5\3\2\2\2$%\7\t\2\2%&\7\13\2\2&\'\7\5\2\2\'(\7\13\2\2()\7\6\2"+
+		"\2)*\7\13\2\2*+\7\7\2\2+,\7\13\2\2,-\5\b\5\2-\7\3\2\2\2./\7\n\2\2/\60"+
+		"\7\b\2\2\60\61\7\n\2\2\61\t\3\2\2\2\4\21\30";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

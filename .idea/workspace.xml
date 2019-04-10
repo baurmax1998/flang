@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee8ff28c-e06e-4e2d-aae8-011e14865f5d" name="Default Changelist" comment="" />
+    <list default="true" id="ee8ff28c-e06e-4e2d-aae8-011e14865f5d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/func.flang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/func.flang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/Field.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/FieldLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/Flang.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/FlangLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/Flang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/Flang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$AdditiveExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$AssignContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BlockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BoolExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BoolExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$CallAccessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$EqualityExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ExpressionSequenceContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$FunctionDefContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IdentifierExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IdentifierExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IfBlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IntExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$LogicalAndExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$LogicalOrExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$MultiplicativeExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$NotExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$NotExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ParenthesizedExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ProgramContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$RelationalExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ReturnStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$SingleExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StatementContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StringExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StringExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ThisExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$VariableDefContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$WhileBlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/MyFlangListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$BurialContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$BurialContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$FieldContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$FieldContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$LocationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$LocationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$PointsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$PointsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/func.flang" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/func.flang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/Field.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/Field.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/FieldLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/FieldLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/Flang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/Flang.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/FlangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/FlangLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,32 +87,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="180">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,19 +99,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/func.flang">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="330">
+              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/func.flang">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+            <state relative-caret-position="556">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -68,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/Alt.g4">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="272" column="36" lean-forward="true" selection-start-line="272" selection-end-line="273" />
+              <caret line="272" column="36" selection-start-line="272" selection-end-line="273" />
             </state>
           </provider>
         </entry>
@@ -77,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/example.field">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -139,6 +199,9 @@
       <replace>CloseParen</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -159,13 +222,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangBaseListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/game/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java" />
         <option value="$PROJECT_DIR$/src/main/antlr4/de/cherry/old/Flang.g4" />
         <option value="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" />
         <option value="$PROJECT_DIR$/src/main/resources/func.flang" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java" />
       </list>
     </option>
   </component>
@@ -179,13 +243,12 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="flang" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="flang" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="antlr4" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -201,6 +264,7 @@
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -319,7 +383,20 @@
               <item name="flang" type="b2602c69:ProjectViewProjectNode" />
               <item name="flang" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flang" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flang" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="antlr4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,6 +407,9 @@
   <component name="PropertiesComponent">
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -461,7 +541,7 @@
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.24959612" />
       <window_info anchor="bottom" id="Regex Tester" />
       <window_info anchor="bottom" id="DB Execution Console" />
@@ -471,11 +551,11 @@
       <window_info anchor="bottom" id="ANTLR Preview" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32876712" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36849314" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
@@ -720,17 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/example.field">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -744,30 +817,118 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/Alt.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="272" column="36" lean-forward="true" selection-start-line="272" selection-end-line="273" />
+          <caret line="272" column="36" selection-start-line="272" selection-end-line="273" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        <state relative-caret-position="556">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/func.flang">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>flang</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: backport-util-concurrent:backport-util-concurrent:3.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
