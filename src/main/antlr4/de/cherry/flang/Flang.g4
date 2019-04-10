@@ -6,7 +6,7 @@ parse
  ;
 
 block
- : ( statement | functionDecl )* ( Return expression )?
+ : statement* Return?
  ;
 
 statement
@@ -15,6 +15,7 @@ statement
  | ifStatement
  | forStatement
  | whileStatement
+ | functionDecl
  ;
 
 assignment
@@ -46,7 +47,7 @@ elseStat
  ;
 
 functionDecl
- : Def Identifier '(' idList? ')' block CBrace
+ : Def Identifier '(' idList? ')'OBrace block CBrace
  ;
 
 forStatement

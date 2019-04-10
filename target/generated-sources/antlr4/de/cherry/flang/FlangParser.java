@@ -153,16 +153,7 @@ public class FlangParser extends Parser {
 		public StatementContext statement(int i) {
 			return getRuleContext(StatementContext.class,i);
 		}
-		public List<FunctionDeclContext> functionDecl() {
-			return getRuleContexts(FunctionDeclContext.class);
-		}
-		public FunctionDeclContext functionDecl(int i) {
-			return getRuleContext(FunctionDeclContext.class,i);
-		}
 		public TerminalNode Return() { return getToken(FlangParser.Return, 0); }
-		public ExpressionContext expression() {
-			return getRuleContext(ExpressionContext.class,0);
-		}
 		public BlockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -189,50 +180,27 @@ public class FlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(41);
+			setState(40);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Println) | (1L << Print) | (1L << Assert) | (1L << Size) | (1L << Def) | (1L << If) | (1L << For) | (1L << While) | (1L << Identifier))) != 0)) {
 				{
-				setState(39);
-				_errHandler.sync(this);
-				switch (_input.LA(1)) {
-				case Println:
-				case Print:
-				case Assert:
-				case Size:
-				case If:
-				case For:
-				case While:
-				case Identifier:
-					{
-					setState(37);
-					statement();
-					}
-					break;
-				case Def:
-					{
-					setState(38);
-					functionDecl();
-					}
-					break;
-				default:
-					throw new NoViableAltException(this);
+				{
+				setState(37);
+				statement();
 				}
 				}
-				setState(43);
+				setState(42);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(46);
+			setState(44);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==Return) {
 				{
-				setState(44);
+				setState(43);
 				match(Return);
-				setState(45);
-				expression(0);
 				}
 			}
 
@@ -265,6 +233,9 @@ public class FlangParser extends Parser {
 		public WhileStatementContext whileStatement() {
 			return getRuleContext(WhileStatementContext.class,0);
 		}
+		public FunctionDeclContext functionDecl() {
+			return getRuleContext(FunctionDeclContext.class,0);
+		}
 		public StatementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -288,42 +259,49 @@ public class FlangParser extends Parser {
 		StatementContext _localctx = new StatementContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_statement);
 		try {
-			setState(53);
+			setState(52);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,3,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,2,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(48);
+				setState(46);
 				assignment();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(49);
+				setState(47);
 				functionCall();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(50);
+				setState(48);
 				ifStatement();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(51);
+				setState(49);
 				forStatement();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(52);
+				setState(50);
 				whileStatement();
+				}
+				break;
+			case 6:
+				enterOuterAlt(_localctx, 6);
+				{
+				setState(51);
+				functionDecl();
 				}
 				break;
 			}
@@ -373,21 +351,21 @@ public class FlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(55);
+			setState(54);
 			match(Identifier);
-			setState(57);
+			setState(56);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==OBracket) {
 				{
-				setState(56);
+				setState(55);
 				indexes();
 				}
 			}
 
-			setState(59);
+			setState(58);
 			match(Assign);
-			setState(60);
+			setState(59);
 			expression(0);
 			}
 		}
@@ -519,28 +497,28 @@ public class FlangParser extends Parser {
 		enterRule(_localctx, 8, RULE_functionCall);
 		int _la;
 		try {
-			setState(89);
+			setState(88);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case Identifier:
 				_localctx = new IdentifierFunctionCallContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(62);
+				setState(61);
 				match(Identifier);
-				setState(63);
+				setState(62);
 				match(OParen);
-				setState(65);
+				setState(64);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Println) | (1L << Print) | (1L << Input) | (1L << Assert) | (1L << Size) | (1L << Null) | (1L << Excl) | (1L << Subtract) | (1L << OBracket) | (1L << OParen) | (1L << Bool) | (1L << Number) | (1L << Identifier) | (1L << String))) != 0)) {
 					{
-					setState(64);
+					setState(63);
 					exprList();
 					}
 				}
 
-				setState(67);
+				setState(66);
 				match(CParen);
 				}
 				break;
@@ -548,21 +526,21 @@ public class FlangParser extends Parser {
 				_localctx = new PrintlnFunctionCallContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(68);
+				setState(67);
 				match(Println);
-				setState(69);
+				setState(68);
 				match(OParen);
-				setState(71);
+				setState(70);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Println) | (1L << Print) | (1L << Input) | (1L << Assert) | (1L << Size) | (1L << Null) | (1L << Excl) | (1L << Subtract) | (1L << OBracket) | (1L << OParen) | (1L << Bool) | (1L << Number) | (1L << Identifier) | (1L << String))) != 0)) {
 					{
-					setState(70);
+					setState(69);
 					expression(0);
 					}
 				}
 
-				setState(73);
+				setState(72);
 				match(CParen);
 				}
 				break;
@@ -570,13 +548,13 @@ public class FlangParser extends Parser {
 				_localctx = new PrintFunctionCallContext(_localctx);
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(74);
+				setState(73);
 				match(Print);
-				setState(75);
+				setState(74);
 				match(OParen);
-				setState(76);
+				setState(75);
 				expression(0);
-				setState(77);
+				setState(76);
 				match(CParen);
 				}
 				break;
@@ -584,13 +562,13 @@ public class FlangParser extends Parser {
 				_localctx = new AssertFunctionCallContext(_localctx);
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(79);
+				setState(78);
 				match(Assert);
-				setState(80);
+				setState(79);
 				match(OParen);
-				setState(81);
+				setState(80);
 				expression(0);
-				setState(82);
+				setState(81);
 				match(CParen);
 				}
 				break;
@@ -598,13 +576,13 @@ public class FlangParser extends Parser {
 				_localctx = new SizeFunctionCallContext(_localctx);
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(84);
+				setState(83);
 				match(Size);
-				setState(85);
+				setState(84);
 				match(OParen);
-				setState(86);
+				setState(85);
 				expression(0);
-				setState(87);
+				setState(86);
 				match(CParen);
 				}
 				break;
@@ -664,35 +642,35 @@ public class FlangParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(91);
+			setState(90);
 			ifStat();
-			setState(95);
+			setState(94);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,7,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(92);
+					setState(91);
 					elseIfStat();
 					}
 					} 
 				}
-				setState(97);
+				setState(96);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,7,_ctx);
 			}
-			setState(99);
+			setState(98);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==Else) {
 				{
-				setState(98);
+				setState(97);
 				elseStat();
 				}
 			}
 
-			setState(101);
+			setState(100);
 			match(CBrace);
 			}
 		}
@@ -741,13 +719,13 @@ public class FlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(103);
+			setState(102);
 			match(If);
-			setState(104);
+			setState(103);
 			expression(0);
-			setState(105);
+			setState(104);
 			match(OBrace);
-			setState(106);
+			setState(105);
 			block();
 			}
 		}
@@ -797,15 +775,15 @@ public class FlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(108);
+			setState(107);
 			match(Else);
-			setState(109);
+			setState(108);
 			match(If);
-			setState(110);
+			setState(109);
 			expression(0);
-			setState(111);
+			setState(110);
 			match(OBrace);
-			setState(112);
+			setState(111);
 			block();
 			}
 		}
@@ -851,11 +829,11 @@ public class FlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(114);
+			setState(113);
 			match(Else);
-			setState(115);
+			setState(114);
 			match(OBrace);
-			setState(116);
+			setState(115);
 			block();
 			}
 		}
@@ -873,6 +851,7 @@ public class FlangParser extends Parser {
 	public static class FunctionDeclContext extends ParserRuleContext {
 		public TerminalNode Def() { return getToken(FlangParser.Def, 0); }
 		public TerminalNode Identifier() { return getToken(FlangParser.Identifier, 0); }
+		public TerminalNode OBrace() { return getToken(FlangParser.OBrace, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -906,24 +885,26 @@ public class FlangParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(118);
+			setState(117);
 			match(Def);
-			setState(119);
+			setState(118);
 			match(Identifier);
-			setState(120);
+			setState(119);
 			match(OParen);
-			setState(122);
+			setState(121);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==Identifier) {
 				{
-				setState(121);
+				setState(120);
 				idList();
 				}
 			}
 
-			setState(124);
+			setState(123);
 			match(CParen);
+			setState(124);
+			match(OBrace);
 			setState(125);
 			block();
 			setState(126);
@@ -1642,7 +1623,7 @@ public class FlangParser extends Parser {
 			{
 			setState(196);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,19,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,18,_ctx) ) {
 			case 1:
 				{
 				_localctx = new UnaryMinusExpressionContext(_localctx);
@@ -1702,7 +1683,7 @@ public class FlangParser extends Parser {
 				functionCall();
 				setState(170);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,12,_ctx) ) {
 				case 1:
 					{
 					setState(169);
@@ -1721,7 +1702,7 @@ public class FlangParser extends Parser {
 				list();
 				setState(174);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,14,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
 				case 1:
 					{
 					setState(173);
@@ -1740,7 +1721,7 @@ public class FlangParser extends Parser {
 				match(Identifier);
 				setState(178);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,15,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,14,_ctx) ) {
 				case 1:
 					{
 					setState(177);
@@ -1759,7 +1740,7 @@ public class FlangParser extends Parser {
 				match(String);
 				setState(182);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,16,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,15,_ctx) ) {
 				case 1:
 					{
 					setState(181);
@@ -1782,7 +1763,7 @@ public class FlangParser extends Parser {
 				match(CParen);
 				setState(188);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,17,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,16,_ctx) ) {
 				case 1:
 					{
 					setState(187);
@@ -1819,7 +1800,7 @@ public class FlangParser extends Parser {
 			_ctx.stop = _input.LT(-1);
 			setState(230);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,21,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,20,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
@@ -1827,7 +1808,7 @@ public class FlangParser extends Parser {
 					{
 					setState(228);
 					_errHandler.sync(this);
-					switch ( getInterpreter().adaptivePredict(_input,20,_ctx) ) {
+					switch ( getInterpreter().adaptivePredict(_input,19,_ctx) ) {
 					case 1:
 						{
 						_localctx = new PowerExpressionContext(new ExpressionContext(_parentctx, _parentState));
@@ -1981,7 +1962,7 @@ public class FlangParser extends Parser {
 				}
 				setState(232);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,21,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,20,_ctx);
 			}
 			}
 		}
@@ -2108,7 +2089,7 @@ public class FlangParser extends Parser {
 				}
 				setState(245); 
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,23,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,22,_ctx);
 			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			}
 		}
@@ -2158,12 +2139,12 @@ public class FlangParser extends Parser {
 		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3/\u00fa\4\2\t\2\4"+
 		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
 		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
-		"\3\2\3\2\3\2\3\3\3\3\7\3*\n\3\f\3\16\3-\13\3\3\3\3\3\5\3\61\n\3\3\4\3"+
-		"\4\3\4\3\4\3\4\5\48\n\4\3\5\3\5\5\5<\n\5\3\5\3\5\3\5\3\6\3\6\3\6\5\6D"+
-		"\n\6\3\6\3\6\3\6\3\6\5\6J\n\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6"+
-		"\3\6\3\6\3\6\3\6\3\6\3\6\5\6\\\n\6\3\7\3\7\7\7`\n\7\f\7\16\7c\13\7\3\7"+
-		"\5\7f\n\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\t\3\n\3\n"+
-		"\3\n\3\n\3\13\3\13\3\13\3\13\5\13}\n\13\3\13\3\13\3\13\3\13\3\f\3\f\3"+
+		"\3\2\3\2\3\2\3\3\7\3)\n\3\f\3\16\3,\13\3\3\3\5\3/\n\3\3\4\3\4\3\4\3\4"+
+		"\3\4\3\4\5\4\67\n\4\3\5\3\5\5\5;\n\5\3\5\3\5\3\5\3\6\3\6\3\6\5\6C\n\6"+
+		"\3\6\3\6\3\6\3\6\5\6I\n\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6"+
+		"\3\6\3\6\3\6\3\6\3\6\5\6[\n\6\3\7\3\7\7\7_\n\7\f\7\16\7b\13\7\3\7\5\7"+
+		"e\n\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\t\3\n\3\n\3\n"+
+		"\3\n\3\13\3\13\3\13\3\13\5\13|\n\13\3\13\3\13\3\13\3\13\3\13\3\f\3\f\3"+
 		"\f\3\f\3\f\3\f\3\f\3\f\3\f\3\f\3\r\3\r\3\r\3\r\3\r\3\r\3\16\3\16\3\16"+
 		"\7\16\u0096\n\16\f\16\16\16\u0099\13\16\3\17\3\17\3\17\7\17\u009e\n\17"+
 		"\f\17\16\17\u00a1\13\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3"+
@@ -2175,27 +2156,27 @@ public class FlangParser extends Parser {
 		"\f\20\16\20\u00ea\13\20\3\21\3\21\5\21\u00ee\n\21\3\21\3\21\3\22\3\22"+
 		"\3\22\3\22\6\22\u00f6\n\22\r\22\16\22\u00f7\3\22\2\3\36\23\2\4\6\b\n\f"+
 		"\16\20\22\24\26\30\32\34\36 \"\2\6\3\2\35\37\3\2\33\34\4\2\25\26\31\32"+
-		"\3\2\23\24\2\u0116\2$\3\2\2\2\4+\3\2\2\2\6\67\3\2\2\2\b9\3\2\2\2\n[\3"+
-		"\2\2\2\f]\3\2\2\2\16i\3\2\2\2\20n\3\2\2\2\22t\3\2\2\2\24x\3\2\2\2\26\u0082"+
-		"\3\2\2\2\30\u008c\3\2\2\2\32\u0092\3\2\2\2\34\u009a\3\2\2\2\36\u00c6\3"+
-		"\2\2\2 \u00eb\3\2\2\2\"\u00f5\3\2\2\2$%\5\4\3\2%&\7\2\2\3&\3\3\2\2\2\'"+
-		"*\5\6\4\2(*\5\24\13\2)\'\3\2\2\2)(\3\2\2\2*-\3\2\2\2+)\3\2\2\2+,\3\2\2"+
-		"\2,\60\3\2\2\2-+\3\2\2\2./\7\13\2\2/\61\5\36\20\2\60.\3\2\2\2\60\61\3"+
-		"\2\2\2\61\5\3\2\2\2\628\5\b\5\2\638\5\n\6\2\648\5\f\7\2\658\5\26\f\2\66"+
-		"8\5\30\r\2\67\62\3\2\2\2\67\63\3\2\2\2\67\64\3\2\2\2\67\65\3\2\2\2\67"+
-		"\66\3\2\2\28\7\3\2\2\29;\7,\2\2:<\5\"\22\2;:\3\2\2\2;<\3\2\2\2<=\3\2\2"+
-		"\2=>\7&\2\2>?\5\36\20\2?\t\3\2\2\2@A\7,\2\2AC\7$\2\2BD\5\34\17\2CB\3\2"+
-		"\2\2CD\3\2\2\2DE\3\2\2\2E\\\7%\2\2FG\7\3\2\2GI\7$\2\2HJ\5\36\20\2IH\3"+
-		"\2\2\2IJ\3\2\2\2JK\3\2\2\2K\\\7%\2\2LM\7\4\2\2MN\7$\2\2NO\5\36\20\2OP"+
-		"\7%\2\2P\\\3\2\2\2QR\7\6\2\2RS\7$\2\2ST\5\36\20\2TU\7%\2\2U\\\3\2\2\2"+
-		"VW\7\7\2\2WX\7$\2\2XY\5\36\20\2YZ\7%\2\2Z\\\3\2\2\2[@\3\2\2\2[F\3\2\2"+
-		"\2[L\3\2\2\2[Q\3\2\2\2[V\3\2\2\2\\\13\3\2\2\2]a\5\16\b\2^`\5\20\t\2_^"+
-		"\3\2\2\2`c\3\2\2\2a_\3\2\2\2ab\3\2\2\2be\3\2\2\2ca\3\2\2\2df\5\22\n\2"+
-		"ed\3\2\2\2ef\3\2\2\2fg\3\2\2\2gh\7!\2\2h\r\3\2\2\2ij\7\t\2\2jk\5\36\20"+
-		"\2kl\7 \2\2lm\5\4\3\2m\17\3\2\2\2no\7\n\2\2op\7\t\2\2pq\5\36\20\2qr\7"+
-		" \2\2rs\5\4\3\2s\21\3\2\2\2tu\7\n\2\2uv\7 \2\2vw\5\4\3\2w\23\3\2\2\2x"+
-		"y\7\b\2\2yz\7,\2\2z|\7$\2\2{}\5\32\16\2|{\3\2\2\2|}\3\2\2\2}~\3\2\2\2"+
-		"~\177\7%\2\2\177\u0080\5\4\3\2\u0080\u0081\7!\2\2\u0081\25\3\2\2\2\u0082"+
+		"\3\2\23\24\2\u0116\2$\3\2\2\2\4*\3\2\2\2\6\66\3\2\2\2\b8\3\2\2\2\nZ\3"+
+		"\2\2\2\f\\\3\2\2\2\16h\3\2\2\2\20m\3\2\2\2\22s\3\2\2\2\24w\3\2\2\2\26"+
+		"\u0082\3\2\2\2\30\u008c\3\2\2\2\32\u0092\3\2\2\2\34\u009a\3\2\2\2\36\u00c6"+
+		"\3\2\2\2 \u00eb\3\2\2\2\"\u00f5\3\2\2\2$%\5\4\3\2%&\7\2\2\3&\3\3\2\2\2"+
+		"\')\5\6\4\2(\'\3\2\2\2),\3\2\2\2*(\3\2\2\2*+\3\2\2\2+.\3\2\2\2,*\3\2\2"+
+		"\2-/\7\13\2\2.-\3\2\2\2./\3\2\2\2/\5\3\2\2\2\60\67\5\b\5\2\61\67\5\n\6"+
+		"\2\62\67\5\f\7\2\63\67\5\26\f\2\64\67\5\30\r\2\65\67\5\24\13\2\66\60\3"+
+		"\2\2\2\66\61\3\2\2\2\66\62\3\2\2\2\66\63\3\2\2\2\66\64\3\2\2\2\66\65\3"+
+		"\2\2\2\67\7\3\2\2\28:\7,\2\29;\5\"\22\2:9\3\2\2\2:;\3\2\2\2;<\3\2\2\2"+
+		"<=\7&\2\2=>\5\36\20\2>\t\3\2\2\2?@\7,\2\2@B\7$\2\2AC\5\34\17\2BA\3\2\2"+
+		"\2BC\3\2\2\2CD\3\2\2\2D[\7%\2\2EF\7\3\2\2FH\7$\2\2GI\5\36\20\2HG\3\2\2"+
+		"\2HI\3\2\2\2IJ\3\2\2\2J[\7%\2\2KL\7\4\2\2LM\7$\2\2MN\5\36\20\2NO\7%\2"+
+		"\2O[\3\2\2\2PQ\7\6\2\2QR\7$\2\2RS\5\36\20\2ST\7%\2\2T[\3\2\2\2UV\7\7\2"+
+		"\2VW\7$\2\2WX\5\36\20\2XY\7%\2\2Y[\3\2\2\2Z?\3\2\2\2ZE\3\2\2\2ZK\3\2\2"+
+		"\2ZP\3\2\2\2ZU\3\2\2\2[\13\3\2\2\2\\`\5\16\b\2]_\5\20\t\2^]\3\2\2\2_b"+
+		"\3\2\2\2`^\3\2\2\2`a\3\2\2\2ad\3\2\2\2b`\3\2\2\2ce\5\22\n\2dc\3\2\2\2"+
+		"de\3\2\2\2ef\3\2\2\2fg\7!\2\2g\r\3\2\2\2hi\7\t\2\2ij\5\36\20\2jk\7 \2"+
+		"\2kl\5\4\3\2l\17\3\2\2\2mn\7\n\2\2no\7\t\2\2op\5\36\20\2pq\7 \2\2qr\5"+
+		"\4\3\2r\21\3\2\2\2st\7\n\2\2tu\7 \2\2uv\5\4\3\2v\23\3\2\2\2wx\7\b\2\2"+
+		"xy\7,\2\2y{\7$\2\2z|\5\32\16\2{z\3\2\2\2{|\3\2\2\2|}\3\2\2\2}~\7%\2\2"+
+		"~\177\7 \2\2\177\u0080\5\4\3\2\u0080\u0081\7!\2\2\u0081\25\3\2\2\2\u0082"+
 		"\u0083\7\f\2\2\u0083\u0084\7,\2\2\u0084\u0085\7&\2\2\u0085\u0086\5\36"+
 		"\20\2\u0086\u0087\7\16\2\2\u0087\u0088\5\36\20\2\u0088\u0089\7 \2\2\u0089"+
 		"\u008a\5\4\3\2\u008a\u008b\7!\2\2\u008b\27\3\2\2\2\u008c\u008d\7\r\2\2"+
@@ -2238,7 +2219,7 @@ public class FlangParser extends Parser {
 		"\u00ee\u00ef\3\2\2\2\u00ef\u00f0\7#\2\2\u00f0!\3\2\2\2\u00f1\u00f2\7\""+
 		"\2\2\u00f2\u00f3\5\36\20\2\u00f3\u00f4\7#\2\2\u00f4\u00f6\3\2\2\2\u00f5"+
 		"\u00f1\3\2\2\2\u00f6\u00f7\3\2\2\2\u00f7\u00f5\3\2\2\2\u00f7\u00f8\3\2"+
-		"\2\2\u00f8#\3\2\2\2\32)+\60\67;CI[ae|\u0097\u009f\u00ac\u00b0\u00b4\u00b8"+
+		"\2\2\u00f8#\3\2\2\2\31*.\66:BHZ`d{\u0097\u009f\u00ac\u00b0\u00b4\u00b8"+
 		"\u00be\u00c3\u00c6\u00e6\u00e8\u00ed\u00f7";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());

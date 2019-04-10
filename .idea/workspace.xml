@@ -2,79 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee8ff28c-e06e-4e2d-aae8-011e14865f5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/flang.flang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/EvalVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/flang/EvalVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/func.flang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/func.flang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/Field.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/FieldLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/Flang.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/FlangLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/Flang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/Flang.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$AdditiveExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$AssignContext.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BlockContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BoolExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$BoolExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$CallAccessContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$EqualityExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ExpressionSequenceContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$FunctionDefContext.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IdentifierExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IdentifierExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IfBlockContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$IntExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$LogicalAndExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$LogicalOrExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$MultiplicativeExpressionContext.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$NotExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$NotExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ParenthesizedExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ProgramContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$RelationalExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ReturnStatementContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$SingleExpressionContext.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StatementContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StringExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$StringExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$ThisExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$VariableDefContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser$WhileBlockContext.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/FlangParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/flang/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/flang/MyFlangListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$BurialContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$BurialContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$FieldContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$FieldContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$LocationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$LocationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$PointsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser$PointsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/FieldParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/game/GameFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/func.flang" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/func.flang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/Field.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/Field.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/FieldLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/FieldLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/Flang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/Flang.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/FlangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/FlangLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/game/FieldParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/flang/MainTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,24 +26,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="223">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,42 +40,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/func.flang">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/flang.flang">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+            <state relative-caret-position="144">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Alt.g4">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/EvalVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="272" column="36" selection-start-line="272" selection-end-line="273" />
+            <state relative-caret-position="161">
+              <caret line="604" column="5" selection-start-line="604" selection-start-column="5" selection-end-line="604" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/example.field">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Flang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="30">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/game/Field.g4">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/ReturnValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Scope.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -226,10 +198,12 @@
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java" />
         <option value="$PROJECT_DIR$/src/main/antlr4/de/cherry/old/Flang.g4" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" />
         <option value="$PROJECT_DIR$/src/main/resources/func.flang" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/flang.flang" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/EvalVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java" />
       </list>
     </option>
   </component>
@@ -239,11 +213,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="flang" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="flang" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -264,13 +233,14 @@
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -374,34 +344,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="flang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flang" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flang" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flang" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flang" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="antlr4" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,6 +458,14 @@
       <option name="presentableId" value="Default" />
       <updated>1554742679330</updated>
     </task>
+    <task id="LOCAL-00001" summary="te">
+      <created>1554916349713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554916349714</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -537,35 +492,39 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="DB Browser" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.24959612" />
-      <window_info anchor="bottom" id="Regex Tester" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Tool Output" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="ANTLR Preview" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32876712" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36849314" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.15993538" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
+      <window_info anchor="bottom" id="Tool Output" order="9" />
+      <window_info anchor="bottom" id="DB Execution Console" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Regex Tester" order="13" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.15993538" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="te" />
+    <option name="LAST_COMMIT_MESSAGE" value="te" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -607,25 +566,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldLexer.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldListener.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldParser.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/test.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldLexer.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldListener.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldParser.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/test/FieldBaseListener.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/flang/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -638,64 +583,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/FlangParser.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/FlangLexer.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangBaseLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#408#417#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangBaseParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/FlangLexer.tokens">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/FlangParser.g4" />
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/FlangLexer.g4" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangBaseLexer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangBaseParser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/FlangLexer.tokens" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -748,20 +640,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Flang.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangListener.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/game/GameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -772,31 +651,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/func.flang">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Alt.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/MyFlangListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4080">
+          <caret line="272" column="36" selection-start-line="272" selection-end-line="273" />
         </state>
       </provider>
     </entry>
@@ -814,37 +677,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Alt.g4">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/EvalException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="272" column="36" selection-start-line="272" selection-end-line="273" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Flang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/func.flang">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/FlangValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/ReturnValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Scope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/SymbolVisitor.java">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/de/cherry/flang/FlangParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        <state relative-caret-position="129">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/EvalVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="604" column="5" selection-start-line="604" selection-start-column="5" selection-end-line="604" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/de/cherry/flang/Flang.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flang.flang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/flang/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

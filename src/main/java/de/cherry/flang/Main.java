@@ -10,9 +10,8 @@ import java.util.HashMap;
 public class Main {
   public static void main(String[] args) throws IOException {
     CharStream standartTest = CharStreams.fromFileName("/Users/mbaaxur/Documents/JavaTest/flang/src/main/resources/func.flang");
-    FlangLexer flangLexer = new FlangLexer(standartTest);
-    CommonTokenStream commonTokenStream = new CommonTokenStream(flangLexer);
-    FlangParser flangParser = new FlangParser(commonTokenStream);
+    CharStream flangTest = CharStreams.fromFileName("/Users/mbaaxur/Documents/JavaTest/flang/src/main/resources/flang.flang");
+    FlangParser flangParser = new FlangParser(new CommonTokenStream(new FlangLexer(flangTest)));
     flangParser.addErrorListener(new BaseErrorListener() {
       @Override
       public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e) {
@@ -26,6 +25,8 @@ public class Main {
     HashMap<String, Function> functions = new HashMap<>();
     SymbolVisitor symbolVisitor = new SymbolVisitor(functions);
     symbolVisitor.visit(program);
+
+    System.out.println(functions);
     EvalVisitor evalVisitor = new EvalVisitor(scope, functions);
     evalVisitor.visit(program);
   }

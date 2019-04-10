@@ -1,0 +1,5 @@
+function test(te) {
+  function inner(ne) {
+    println("hallo")
+  }
+}

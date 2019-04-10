@@ -600,10 +600,7 @@ public class EvalVisitor extends FlangBaseVisitor<FlangValue> {
     for (FlangParser.StatementContext sx: ctx.statement()) {
       this.visit(sx);
     }
-    FlangParser.ExpressionContext ex;
-    if ((ex = ctx.expression()) != null) {
-      returnValue.value = this.visit(ex);
-      scope = scope.parent();
+    if (ctx.Return() != null) {
       throw returnValue;
     }
     scope = scope.parent();
